@@ -7,7 +7,6 @@ require 'dm-migrations'
 require 'dm-yaml-adapter/spec/setup'
 
 ENV['ADAPTER']          = 'yaml'
-ENV['ADAPTER_SUPPORTS'] = 'all'
 
 describe 'DataMapper::Adapters::YamlAdapter' do
 
