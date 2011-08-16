@@ -4,6 +4,10 @@ require 'dm-core'
 module DataMapper
   module Adapters
     class YamlAdapter < AbstractAdapter
+      include Capabilities
+      
+      capabilities :test => true
+      
       # @api semipublic
       def create(resources)
         update_records(resources.first.model) do |records|
