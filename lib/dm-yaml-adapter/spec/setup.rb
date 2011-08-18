@@ -1,5 +1,5 @@
 require 'dm-yaml-adapter'
-require 'dm-core/spec/setup'
+require 'dm-core/spec/spec_helper'
 
 require 'tempfile'
 
@@ -18,3 +18,4 @@ module DataMapper
     end
   end
 end
+

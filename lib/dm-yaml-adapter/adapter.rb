@@ -4,7 +4,7 @@ require 'dm-core'
 module DataMapper
   module Adapters
     class YamlAdapter < AbstractAdapter
-      capabilities :all => true
+      capabilities :all => true, :join => false, :migrations => true
       
       # @api semipublic
       def create(resources)

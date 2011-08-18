@@ -1,19 +1,6 @@
-require 'spec_helper'
-
-require 'dm-core'
-require 'dm-core/spec/shared/adapter_spec'
-
-require 'dm-migrations'
 require 'dm-yaml-adapter/spec/setup'
 
-ENV['ADAPTER']          = 'yaml'
-
-describe 'DataMapper::Adapters::YamlAdapter' do
-
-  before :all do
-    @adapter    = DataMapper::Spec.adapter
-    @repository = DataMapper.repository(@adapter.name)
-  end
+describe "DataMapper::Adapters::YamlAdapter" do
 
   it_should_behave_like "An Adapter"
 
